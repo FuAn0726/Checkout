@@ -7,10 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Display Student Name
-        run: echo "Display Student - Your Name Here"
+        run: echo "Display Student - Yong Fu An"
 
       - name: Display Module
         run: echo "Display Module - C339 Software Testing and Analytics."
 
       - name: Display Message
-        run: echo "Display My GitHub Actions workflow is running automatically."
+        run: echo "My GitHub Actions workflow is running automatically."
