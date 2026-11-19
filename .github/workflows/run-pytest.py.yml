@@ -1,0 +1,14 @@
+name: Run pytest
+on: push
+jobs:
+ test:
+    runs-on: ubuntu-latest
+    steps:
+     - name: Checkout
+       uses: actions/checkout@v7.0.1
+       with: 
+          python-version: "3.12"
+     - name: install Pytest
+       run: pip install pytest
+     - name: Run Pytest  
+       run: python -m pytest
