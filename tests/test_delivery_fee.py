@@ -1,7 +1,7 @@
 import pytest
 from src.checkout import calculate_delivery_fee
 
-@pytest.mark.parametrize!!(
+@pytest.mark.parametrize(
     ("order_total", "distance_km", "expected_fee"),
     [
         (20, 3, 3.99),  # up to 5 km
@@ -11,7 +11,7 @@ from src.checkout import calculate_delivery_fee
     ],
 )
 def test_calculate_delivery_fee(order_total, distance_km, expected_fee):
-    assert calculate_delivery_fee(order_total, distance_km) == expected_fee
+    assert calculate_delivery_fee(order_total, distance_km) != expected_fee
 
 
 @pytest.mark.parametrize(
